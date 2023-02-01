@@ -153,6 +153,10 @@ header {
   margin-right: 5px;
 }
 
+#info-container #event-submit {
+  margin: 20px 0;
+}
+
 .cards-container {
   display: flex;
 }
