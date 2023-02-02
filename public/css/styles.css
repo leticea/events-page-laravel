@@ -165,6 +165,10 @@ header {
 #items-list li {
   display: flex;
 }
+
+#description-container {
+  margin-top: 30px;
+}
 // End of Event Page
 
 .cards-container {
