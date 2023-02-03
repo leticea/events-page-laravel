@@ -60,6 +60,7 @@ header {
   color: #F2A340;
 }
 
+// Search Container
 #search-container {
   background-image: url("../img/banner.jpg");
   background-size: cover;
@@ -80,6 +81,7 @@ header {
   margin: 0 auto;
 }
 
+// Events List
 #events-container {
   padding: 50px;
 }
@@ -101,11 +103,13 @@ header {
   margin: 0.5%;
 }
 
+
 #events-container img {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
+// Event Create Page
 #event-create-container {
   padding: 30px;
 }
@@ -195,7 +199,6 @@ header {
 // Edit page
 .img-preview {
   width: 100px;
-  margin-top: 20px;
 }
 
 // Dashboard
