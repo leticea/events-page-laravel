@@ -18,7 +18,6 @@
                         <th scope="col">Ações</th>
                     </tr>
                 </thead>
-
                 <tbody>
                     @foreach ($events as $event)
                         <tr>
@@ -30,7 +29,7 @@
                                 <form action="/events/{{ $event->id }}" method="post">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" class="btn btn-danger delete-btn"><ion-icon></ion-icon></button>
+                                    <button type="submit" class="btn btn-danger delete-btn"><ion-icon name="trash-outline"></ion-icon> Deletar</button>
                                 </form>
                             </td>
                         </tr>
