@@ -8,7 +8,7 @@
   <h1>Editando: {{ $event->title }}</h1>
   <form action="/events/update/{{ $event->id }}" method="post" enctype="multipart/form-data">
     @csrf
-    @method('PUT')
+    @method('put')
     <div class="form-group">
       <label for="image">Imagem do Evento:</label>
       <input type="file" id="image" name="image" class="form-control-file">
@@ -17,24 +17,24 @@
 
     <div class="form-group">
       <label for="title">Evento:</label>
-      <input type="text" class="form-control" id="title" name="title" placeholder="Nome do evento">
+      <input type="text" class="form-control" id="title" name="title" placeholder="Nome do evento" value="{{ $event->title }}">
     </div>
 
     <div class="form-group">
       <label for="date">Data do evento:</label>
-      <input type="date" class="form-control" id="date" name="date">
+      <input type="date" class="form-control" id="date" name="date" value="{{ $event->date->format('Y-m-d') }}">
     </div>
 
     <div class="form-group">
       <label for="title">Cidade:</label>
-      <input type="text" class="form-control" id="city" name="city" placeholder="Local do evento">
+      <input type="text" class="form-control" id="city" name="city" placeholder="Local do evento" value="{{ $event->city }}">
     </div>
 
     <div class="form-group">
       <label for="title">O evento é privado?</label>
       <select name="private" id="private" class="form-control">
         <option value="0">Não</option>
-        <option value="1">Sim</option>
+        <option value="1" {{ $event->private == 1 ? "selected='selected'" : "" }}>Sim</option>
       </select>
     </div>
 
@@ -46,7 +46,7 @@
         class="form-control"
         placeholder="O que vai acontecer no evento?"
         style="resize: none"
-      ></textarea>
+      >{{ $event->description }}</textarea>
     </div>
 
     <div class="form-group">

@@ -192,6 +192,12 @@ header {
   color: #757575;
 }
 
+// Edit page
+.img-preview {
+  width: 100px;
+  margin-top: 20px;
+}
+
 // Dashboard
 .dashboard-title-container {
   margin-bottom: 30px;
