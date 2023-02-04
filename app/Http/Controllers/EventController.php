@@ -124,7 +124,7 @@ class EventController extends Controller
 
         $user = auth()->user();
 
-        $user->eventAsParticipant()->attach($id);
+        $user->eventsAsParticipant()->attach($id);
 
         $event = Event::findOrFail($id);
 
