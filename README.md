@@ -36,6 +36,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Laravel](https://laravel.com/)
 - [Composer](https://getcomposer.org/) - 2.4.4
 - [Jetstream](https://jetstream.laravel.com/2.x/introduction.html)
+- [Bootstrap](https://getbootstrap.com/)
 
 ## 💻 Projeto
 
