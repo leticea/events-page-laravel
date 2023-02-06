@@ -219,6 +219,11 @@ header {
   display: inline-block;
 }
 
+.img-preview {
+  width: 200px;
+  margin-top: 20px;
+}
+
 /* footer */
 footer {
   text-align: center;
@@ -233,5 +238,3 @@ footer {
 footer p {
   margin-bottom: 0;
 }
-
-45
