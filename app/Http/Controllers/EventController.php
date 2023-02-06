@@ -14,13 +14,11 @@ class EventController extends Controller
         $search = request('search');
 
         if ($search) {
-
             $events = Event::where([
                 ['title', 'like', '%'.$search.'%']
             ])->get();
 
         } else {
-
             $events = Event::all();
         }
 
@@ -46,7 +44,6 @@ class EventController extends Controller
         // Image Upload
 
         if ($request->hasFile('image') && $request->file('image')->isValid()) {
-
             $requestImage = $request->image;
 
             $extension = $requestImage->extension();
@@ -126,7 +123,6 @@ class EventController extends Controller
         $data = $request->all();
 
         if ($request->hasFile('image') && $request->file('image')->isValid()) {
-
             $requestImage = $request->image;
 
             $extension = $requestImage->extension();

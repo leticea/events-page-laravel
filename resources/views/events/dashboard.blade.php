@@ -73,10 +73,8 @@
                     @endforeach
                 </tbody>
             </table>
-
         @else
             <p>Você ainda não está participando de nenhum evento, <a href="/">veja todos os eventos</a></p>
         @endif
     </div>
-
 @endsection
