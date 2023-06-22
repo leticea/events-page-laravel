@@ -27,16 +27,18 @@
   <img alt="" src=".github/image5.png">
 </p>
 
-## Events Page
+# Events Page
 
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [Laravel](https://laravel.com/)
+- [Laravel](https://laravel.com/) - 9.48.0
 - [Composer](https://getcomposer.org/) - 2.4.4
+- [MySQL](https://www.mysql.com/)
 - [Jetstream](https://jetstream.laravel.com/2.x/introduction.html)
 - [Bootstrap](https://getbootstrap.com/)
+
 
 ## 💻 Projeto
 
@@ -48,7 +50,9 @@ Aula do canal [Matheus Battisti](https://www.youtube.com/playlist?list=PLnDvRpP8
 
 - Clone o projeto;
 - Crie um arquivo chamado '.env' e copie tudo o que está no '.env.example';
+- Rode composer install;
 - Configure o username e password do arquivo '.env' com os dados do seu banco de dados (DB_DATABASE=hdceventscurso);
+- php artisan migrate;
 - php artisan serve (roda o projeto na porta indicada);
 
 Obs: sem a configuração do banco de dados o projeto não irá rodar.

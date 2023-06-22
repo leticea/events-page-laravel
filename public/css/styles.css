@@ -118,7 +118,7 @@ header {
 }
 
 #events-container img {
-  max-height: 150px;
+  max-height: 200px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
